@@ -211,14 +211,14 @@
 .doctor_Sa-text p{
     font-size: 1.2rem;
     color: #1a1a1a;
-    width: 350px;
+    width: 335px;
     margin-left: 1em;
 }
 
 .doctor_Sa-img img{
     object-fit: center;
     background-position: center;
-    width: 400px;
+    width: 350px;
     height: 65vh;
     margin-top: -3.5em;
 }
@@ -229,10 +229,11 @@
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    margin-left: -2em;
 }
 
 .qualifications_contact  img{
-    width: 300px;
+    width: 250px;
 }
 
 #ch:checked ~ .show_less {
@@ -319,7 +320,7 @@ label{
     }
 
     .smile-info p{
-        width: 60%;
+        width: 75%;
         font-size:  1.2rem;
         margin-bottom: 2em;
     }
@@ -342,7 +343,7 @@ label{
         /* Anoying_message */
 
     .anoying_message{
-        transform: translate(-50%, 60%);
+        transform: translate(-50%, 80%);
         padding: 10px 10px;
         width: 60%;
         transition: .3s ease-in-out;
