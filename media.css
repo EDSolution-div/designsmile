@@ -7,13 +7,13 @@
         flex-direction: column;
         align-items: center;
         background-color: #fff;
-        padding: 10px 0;
+        padding: 5px 0;
         justify-content: center;
     }
     
     ul li a{
         display: block;
-        padding: 15px 5px;
+        padding: 10px 1px;
         color: #000;
         text-decoration: none;
         align-items: center;
@@ -26,21 +26,21 @@
     }
     
     ul li ul.dropdown_menu{
-        width: 95%;
+        width: 90%;
         background: rgb(0, 0,0,0.8);
         color: #fff;
         position: absolute;
-        margin-left: 18.4em;
-        margin-top: -10.2em;
+        margin-left: 0em;
+        margin-top: -.6em;
         display: none;
     }
 
     ul li ul.drop_menu{
-        width: 95%;
+        width: 90%;
         background: rgb(0, 0,0,0.8);
         color: #fff;
-        margin-left: 18.1em;
-        margin-top: -3.6em;
+        margin-left: 0em;
+        margin-top: -.6em;
         position: absolute;
         display: none;
     }
@@ -83,7 +83,7 @@
         position: fixed;
         flex-direction: column;
         text-align: center;
-        width: 300px;
+        width: 290px;
         top: -35em;
         left: -.1em;
         background: rgb(0, 0,0,0.8);
@@ -99,7 +99,7 @@
     
     #item li a{
         text-decoration: none;
-        font-size: 1.3em;
+        font-size: 1.1em;
         color: #fff;
         margin-left: 2em;
         align-items: center;
@@ -130,7 +130,7 @@
         top: 0%;
         left: 0;
         object-fit: cover;
-        width: 50%;
+        width: 100%;
         height: 100%;
         pointer-events: none;
         background-size: cover;
@@ -149,7 +149,11 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(6%, -20%);
+        transform: translate(-45%, -22%);
+        padding: 20px;
+        border: solid #000;
+        border-radius: 22px;
+        backdrop-filter: blur(22px);
     }
     
     .mid p{
@@ -205,16 +209,16 @@
 }
 
 .doctor_Sa-text p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #1a1a1a;
-    width: 450px;
-    margin-left: 2em;
+    width: 350px;
+    margin-left: 1em;
 }
 
 .doctor_Sa-img img{
     object-fit: center;
     background-position: center;
-    width: 600px;
+    width: 400px;
     height: 65vh;
     margin-top: -3.5em;
 }
@@ -266,7 +270,7 @@ label{
 
 .border_center p{
     z-index: 1;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #1a1a1a;
 
 }
@@ -306,7 +310,7 @@ label{
     .smile-info hr{
         display: block;
         margin-top: 10px;
-        margin-left: 22%;
+        margin-left: 5%;
         margin-bottom: 20px;
         opacity: 1;
         color: #fff;
@@ -327,9 +331,9 @@ label{
     }
 
     .smile-info img{
-        width: 500px;
+        width: 350px;
         object-fit: cover;
-        margin-left: 20px;
+        margin-left: 8px;
         box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -338,7 +342,7 @@ label{
         /* Anoying_message */
 
     .anoying_message{
-        transform: translate(-50%, 80%);
+        transform: translate(-50%, 60%);
         padding: 10px 10px;
         width: 60%;
         transition: .3s ease-in-out;
@@ -364,7 +368,7 @@ label{
     .anoying_body a{
         text-decoration: none;
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         z-index: 1;
     }
 
@@ -375,7 +379,7 @@ label{
     }
     
     .anoying_text p{
-        font-size: 1.3em;
+        font-size: 1.1em;
         margin-bottom: 1em;
         width: 450%;
         display: none;
@@ -384,7 +388,7 @@ label{
     .anoying_body{
         display:block;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .anoying_body span{
@@ -403,7 +407,7 @@ label{
     }
 
     .close-button{
-        font-size: 3rem;
+        font-size: 2rem;
         color: #171819;
     }
 
@@ -422,13 +426,17 @@ label{
         align-items: center;
     }
 
+    .flex_contact h1{
+        font-size: 2.5em;
+    }
+
     .flex-one{
         margin-right: -1em;
         margin-bottom: 4em;
     }
 
     .flex-one h5{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .flex-one p{
@@ -437,19 +445,21 @@ label{
 
     .flex-two{
         margin-bottom: 4em;
+        width: 127%;
     }
 
     .flex-two h5{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .flex-two p{
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-bottom: .4em;
     }
 
     .flex-two a{
-        line-height: 2em;
+        line-height: 1em;
+        color: forestgreen;
     }
 
     .flex-two a:hover{
@@ -458,11 +468,10 @@ label{
     }
 
     .flex-one i{
-        position: absolute;
         left: 43%;
         top: 50%;
-        transform: translateY(-55%);
-        font-size: 5em;
+        transform: translateY(-75%);
+        font-size: 2em;
         color: red;
         background: #fff;
         border-radius: 22px;
@@ -470,10 +479,9 @@ label{
     }
 
     .flex-two i{
-        position: absolute;
         left: 44%;
         top: 50%;
-        transform: translateY(190%);
+        transform: translateY(320%);
         font-size: 20px;
         background: #fff;
         border-radius: 22px;
@@ -481,10 +489,9 @@ label{
     }
 
     .flex-three i{
-        position: absolute;
         left: 42%;
         bottom: 50%;
-        transform: translateY(670%);
+        transform: translateY(1005%);
         font-size: 20px;
         fill: red;
         background: #fff;
@@ -511,13 +518,13 @@ label{
 
     .service_info{
         background-color: #fff;
-        padding: 13em 0;
+        padding: 9em 0;
     }
 
     .info_contact-up h1{
         text-align: center;
         color: var(--color-text);
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-weight: 500;
         margin-bottom: 30px;
         text-transform: capitalize;
@@ -526,7 +533,7 @@ label{
     #Check-up .info_contact-up p{
         color: #666666;
         width: 50%;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-top: -2em;
         text-align: center;
     }
@@ -534,7 +541,7 @@ label{
     .info_center{
         color: var(--color-box);
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-bottom: 1.5em;
     }
 
@@ -564,8 +571,8 @@ label{
 
     .info_more li{
         color: #7a7a7a;
-        width: 100%;
-        font-size: 1.2em;
+        width: 90%;
+        font-size: 1em;
         margin-bottom: 1em;
         font-family: "Poppins", sans-serif;
     }
@@ -581,27 +588,27 @@ label{
     /* info_two */
 
     .contact-one h5{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .contact-one li{
-        font-size: 1.4em;
+        font-size: 1.2em;
         color: #464649;
         width: 80%;
     }
 
     .contact-two h5{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .contact-two li{
-        font-size: 1.4em;
+        font-size: 1.2em;
         color: #464649;
         width: 80%;
     }
 
     .info_three h5{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .info_three li{
@@ -621,29 +628,30 @@ label{
     }
 
     .info_more-one h4{
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 1.1em;
         width: 130%;
     }
 
     .info_more-one p{
         color: #666262;
-        width: 120%;
-        font-size: 1.2em;
+        width: 170%;
+        font-size: 1.1em;
         font-family: "Poppins", sans-serif;
     }
 
     .info_more-two h4{
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 1.1em;
         width: 130%;
     }
 
     .info_more-two p{
         color: #666262;
-        width: 120%;
-        font-size: 1.2em;
+        width: 170%;
+        font-size: 1.1em;
         font-family: "Poppins", sans-serif;
+        margin-bottom: -4em;
     }
 
     /* close info_more-contact */
@@ -664,32 +672,32 @@ label{
 
     .aesthetic_info-contact p span{
         color: #1a1a1a;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-one h5{
-        font-size: 2.4em;
+        font-size: 2em;
         color: #000;
         margin-bottom: .8em;
     }
 
     .aesthetic_info-list-one p{
-        font-size: 1.4em;
-        color: #666262;
-        width: 90%;
-        font-family: "Poppins", sans-serif;
-    }
-
-    .aesthetic_info-list-two span{
         font-size: 1.2em;
         color: #666262;
         width: 90%;
         font-family: "Poppins", sans-serif;
     }
 
+    .aesthetic_info-list-two span{
+        font-size: 1.1em;
+        color: #666262;
+        width: 90%;
+        font-family: "Poppins", sans-serif;
+    }
+
     .aesthetic_info-list-two h5{
-        font-size: 1.8em;
+        font-size: 1.4em;
         color: #1a1a1a;
         margin-bottom: .8em;
     }
@@ -699,42 +707,42 @@ label{
     }
 
     .aesthetic_info-list-one li{
-        font-size: 1.2em;
+        font-size: 1.1em;
         width: 85%;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-two h6{
-        font-size: 1.2em;
+        font-size: 1em;
         color: #039be5;
-        width: 70%;
-        margin-left: 4.3em;
+        width: 100%;
+        margin-left: 0em;
         text-align: center;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-three h5{
-        font-size: 1.8em;
+        font-size: 1.5em;
         color: #1a1a1a;
         margin-bottom: .8em;
     }
 
     .aesthetic_info-list-three ul{
-        font-size: 1.5em;
+        font-size: 1em;
         color: #000;
         margin-bottom: .4em;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-forth ul{
-        font-size: 1.2em;
+        font-size: 1em;
         color: #000;
         margin-bottom: .4em;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-two ul{
-        font-size: 1.2em;
+        font-size: 1em;
         color: #000;
         width: 75%;
         margin-bottom: .4em;
@@ -742,38 +750,42 @@ label{
     }
 
     .aesthetic_info-list-one ul{
-        font-size: 1.5em;
+        font-size: 1em;
         color: #000;
         margin-bottom: .4em;
         font-family: "Poppins", sans-serif;
     }
 
+    .aesthetic_info-list-two span p{
+        font-size: 1em;
+    }
+
     .aesthetic_info-list-three li{
-        font-size: 1.2em;
+        font-size: 1em;
         width: 75%;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-forth li{
-        font-size: 1.2em;
+        font-size: 1em;
         width: 85%;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-two li{
-        font-size: 1.2em;
+        font-size: 1em;
         width: 75%;
         font-family: "Poppins", sans-serif;
     }
 
     .aesthetic_info-list-forth h5{
-        font-size: 1.9em;
+        font-size: 1.4em;
         color: #1a1a1a;
         margin-bottom: .8em;
     }
 
     .aesthetic_info-list-forth p{
-        font-size: 1.3em;
+        font-size: 1em;
         color: #666262;
         font-family: "Poppins", sans-serif;
         width: 90%;
@@ -802,13 +814,13 @@ label{
 
     .aesthetic_info-img h2{
         color: var(--color-box);
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: .4em 0;
     }
 
     .border_note{
-        width: 70%;
-        height: 200px;
+        width: 90%;
+        height: 150px;
         position: relative;
         display: flex;
         place-content: center;
@@ -817,12 +829,12 @@ label{
         box-shadow: 10px 10px 10px 0 rgba(99, 98, 98, 0.5);
         border-radius: 20px;
         padding: 0 20px;
-        margin-left: 6em;
-        margin-bottom: -13em;
+        margin-left: 1em;
+        margin-bottom: -10em;
     }
 
     .border_note p{
-        font-size: 1.2em;
+        font-size: .9em;
         color: #1a1a1a;
     }
 
@@ -876,6 +888,114 @@ label{
     }
 
     /*close service-info*/
+
+    /* team slide */
+
+.team_container{
+    padding: 0 10px;
+}
+
+.team-slider{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 450px;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.team-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-center h5{
+    color: #000;
+    font-size: 1.1em;
+}
+
+.team-center h2{
+    color: #1a1a1a;
+    width: 150%;
+    font-size: 1.2em;
+}
+
+.overlay-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #7436bb66 28%, #b520a378 68%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.team-img:hover .overlay-content{
+    height: 100%;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.overlay_text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-text);
+}
+
+.overlay_text h4{
+    margin: 6px 0 15px 0; 
+    font-size: 1.5rem;
+} 
+
+.overlay_text h5{
+    color: #aaa;
+    font-size: 1.2rem;
+} 
+
+.slider{
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(240px * 8);
+    animation: scroll 50s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0px * -2);
+    }
+    100% {
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+/* close team slide */
     
     /* SERVICES Cards  */
 
@@ -891,9 +1011,9 @@ label{
 
     .service-card {
         flex: 0 0 auto;
-        width: 460px;
+        width: 350px;
         height: 250px;
-        margin: 0 70px;
+        margin: 0 20px;
         justify-content: center;
         align-items: center;
         background-color: #fff;
@@ -921,19 +1041,19 @@ label{
     }
 
     .customers h2{
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .customers h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         margin-left: .2em;
     }
 
     .customers hr{
-        margin-left: 25%;
+        margin-left: 17%;
         opacity: 1;
-        width: 300px; 
+        width: 250px; 
     }
 
     .comment-container{
@@ -941,6 +1061,7 @@ label{
         justify-content: center;
         align-items: center;
         gap: 1em;
+        margin-left: 2em;
     }
 
     .comments-info .one-comma{
@@ -948,22 +1069,23 @@ label{
     }
 
     .comments-info .two-comma{
-        font-size: 1.5em;
+        font-size: 2em;
+        margin-left: 2em;
     }
 
     .comment-name i{
-        font-size: 2em;
+        font-size: 1em;
     }
 
     .comment-name h4{
         color: #1a1a1a;
-        font-size: 1em;
-        margin-left: 7rem;
+        font-size: 1.2em;
+        margin-left: 8rem;
     }
 
     .comments-info p{
-        width: 360px;
-        font-size: 1.5em;
+        width: 300px;
+        font-size: 1.2em;
     }
 
     /* close comments */
@@ -987,19 +1109,19 @@ label{
         backdrop-filter: blur(25px);
         text-align: center;
         color: wheat;
-        width: 400px;
+        width: 300px;
         box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
     
     }
     
     .login-title{
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 40px;
     
     }
     
     .input-box{
-        margin: 20px 0;
+        margin: 10px 0;
         position: relative;
     }    
     
@@ -1011,7 +1133,7 @@ label{
         border-radius: 99px;
         outline: 3px solid transparent;
         transition: 0.3s;
-        font-size: 15px;
+        font-size: 10px;
         color: white;
         font-weight: 600;
     }
@@ -1056,7 +1178,7 @@ label{
     form {
         top: 50%;
         left: 50%;
-        transform: translate(25%, 5%);
+        transform: translate(10%, 13%);
         justify-content: center;
         align-items: center;
     }
@@ -1161,8 +1283,8 @@ body.show-chat #chat-box-toggler span:last-child {
 .chat-box-popup{
     position: fixed;
     left: 35px;
-    bottom: 140px;
-    width: 420px;
+    bottom: 120px;
+    width: 320px;
     background: #fff;
     overflow: hidden;
     border-radius: 15px;
@@ -1209,12 +1331,14 @@ body.show-chat .chat-box-popup{
     height: 54px;
     width: 100px;
     padding: 6px;
+    border-radius: 22px;
+    background: #fff;
 }
 
 .header-info .logo-text{
     color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .chat-box-body {
@@ -1269,6 +1393,7 @@ body.show-chat .chat-box-popup{
     background: none;
     outline: none;
     border: none;
+    margin-left: -.6em;
     
 }
 
@@ -1294,7 +1419,7 @@ body.show-chat .chat-box-popup{
 #whatsapp .w-app{
     font-weight: 800;
     font-size: 36px;
-    bottom: 80px;
+    bottom: 60px;
     left: 30px;
     border: 0;
     width: 50px;
@@ -1310,8 +1435,8 @@ body.show-chat .chat-box-popup{
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: #25d366;
     border-radius: 50%;
     -webkit-animation: pulse-border 1500ms ease-out infinite;
@@ -1335,6 +1460,7 @@ body.show-chat .chat-box-popup{
     border-radius: 0;
     border: none;
     bottom: 50px;
+    right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1494,12 +1620,12 @@ body.show-chat .chat-box-popup{
     }
 
     iframe{
-        width: 400px;
+        width: 350px;
         height: 300px;
     }
 
     .maps h5{
-        font-size: 1.8em;
+        font-size: 1.3em;
         text-transform: uppercase;
         color: #c4c4c4;
         font-family: "Poppins", sans-serif;
@@ -1521,18 +1647,17 @@ body.show-chat .chat-box-popup{
 
     .operation-two h1, h3{
         color: #c4c4c4;
-        font-size: 1.8em;
-        margin-left: -4.2em;
+        font-size: 1.2em;
+        margin-left: -2em;
     }
 
     .operation-two {
         margin-bottom: 1em;
     }
 
-    .operation-two p{
+    .operation-two  span{
         color: #1a1a1a;
         font-size: 1.2em;
-        margin-left: -4.5em;
     }
 
     .operation-two h1 span{
