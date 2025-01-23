@@ -9411,33 +9411,30 @@ label{
     }
 
     .flex-one i{
-        mask-position: center;
-        left: 11%;
+        left: 43%;
         top: 50%;
-        transform: translateY(-29%);
-        font-size: 7em;
+        transform: translateY(-25%);
+        font-size: 5em;
         color: red;
         background: #fff;
         border-radius: 22px;
         padding: 10px;
     }
-
+    
     .flex-two i{
-        mask-position: center;
-        left: 46%;
+        left: 44%;
         top: 50%;
-        transform: translateY(-140%);
+        transform: translateY(160%);
         font-size: 20px;
         background: #fff;
         border-radius: 22px;
         padding: 10px;
     }
-
+    
     .flex-three i{
-        mask-position: center;
-        left: 80%;
+        left: 22%;
         bottom: 50%;
-        transform: translateY(150%);
+        transform: translateY(70%);
         font-size: 20px;
         fill: red;
         background: #fff;
@@ -10021,7 +10018,7 @@ label{
     form {
         top: 50%;
         left: 50%;
-        transform: translate(65%, 1%);
+        transform: translate(65%, -15%);
         justify-content: center;
         align-items: center;
     }
