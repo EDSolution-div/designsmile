@@ -228,7 +228,7 @@
 .doctor_Sa-img img{
     object-fit: center;
     background-position: center;
-    width: 350px;
+    width: max(calc(150px * 2), 100%);
     height: 65vh;
     margin-top: -3.5em;
 }
@@ -909,7 +909,7 @@ label{
 
 .team-slider{
     flex: 0 0 auto;
-    width: 300px;
+    width: 250px;
     height: 450px;
     margin: 0 20px;
     justify-content: center;
@@ -954,24 +954,16 @@ label{
     transition: 0.5s ease;
 }
 
-.team-img:hover .overlay-content{
-    height: 100%;
-    cursor: pointer;
-    filter: grayscale(1);
-}
-
 .overlay_text{
-    position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: var(--color-text);
 }
 
 .overlay_text h4{
-    margin: 6px 0 15px 0; 
+
     font-size: 1.5rem;
 } 
 
@@ -980,34 +972,98 @@ label{
     font-size: 1.2rem;
 } 
 
-.slider{
-    margin: auto;
+/* team slide contact */
+
+.wrapper{
+    /*border: 1px solid black;*/
+    /*width: 90%;
+    max-width: 1536px;*/
+    margin-inline: auto;
     position: relative;
-    display: grid;
-    place-items: center;
+    height: 300px;
+    margin-top: 5rem;
     overflow: hidden;
+    /*mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0)
+    );*/
+    margin-top: -3em;
+    margin-bottom: 3em;
 }
 
-.slide-track{
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 350px;
+    background-color: red;
+    border-bottom: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.team-member{
     display: flex;
-    width: calc(240px * 8);
-    animation: scroll 50s linear infinite;
+    gap: 2em;
 }
 
-.slide-track:hover{
-    animation-play-state: paused;
+.team-thumb{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
 }
 
-@keyframes scroll{
-    0% {
-        transform: translateX(0px * -2);
-    }
-    100% {
-        transform: translateX(calc(-200px * 7));
-    }
+
+#team1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
 
-/* close team slide */
+#team2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+#team3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+#team4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+#team5  {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+#team6  {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+#team7  {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+#team8  {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.overlay_text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: #fff;
+}
+
+/* close team slide contact */
     
     /* SERVICES Cards  */
 
@@ -1044,63 +1100,111 @@ label{
 
     /* close SERVICES Cards  */
 
-        /* comments */
+/* flex comment*/
 
-    .text-comment{
-        margin-top: -10px;
-        padding-bottom: 50px;
-        border-top: 2px solid#028a0f;
-    }
+.flex-comment_one{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 1em;
+}
 
-    .customers h2{
-        font-size: 1.7rem;
-    }
+.flex-comment_two{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
 
-    .customers h3{
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: .2em;
-    }
+.flex-comment_header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    .customers hr{
-        margin-left: 17%;
-        opacity: 1;
-        width: 250px; 
-    }
+.flex-comment_one-text, .flex-comment_two-text, .flex-comment_three-text{
+    background: #c9c5c5;
+    border-radius: 22px;
+    padding: 20px;
+    width: 100%;
+}
 
-    .comment-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
-        margin-left: 2em;
-    }
+.flex-comment_header i{
+    background-color: #039be5;
+    border-radius: 99px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+}
 
-    .comments-info .one-comma{
-        font-size: 2em;
-    }
+.flex-comment_header a{
+    font-size: 1.1em;
+    margin-left: .6em;
+}
 
-    .comments-info .two-comma{
-        font-size: 2em;
-        margin-left: 2em;
-    }
+.flex-comment_header p{
+    margin-left: 3.6em;
+    color: #5d5d5f;
+}
 
-    .comment-name i{
-        font-size: 1em;
-    }
+.comment_more{
+    transform: translate(-50%);
+}
 
-    .comment-name h4{
-        color: #1a1a1a;
-        font-size: 1.2em;
-        margin-left: 8rem;
-    }
+.star_group{
+    font-size: 1.5em;
+    fill: #ff891e;
+    color: #ff891e;
+    user-select: none;
+}
 
-    .comments-info p{
-        width: 300px;
-        font-size: 1.2em;
-    }
+.comment_more {
+    display: none;
+    margin-left: 7em;
+}
 
-    /* close comments */
+#cm:checked ~ .comment_more {
+    display: block;
+}
+
+#cm:checked ~ label {
+    display: none;
+}
+
+#cm{
+    display: none;
+}
+
+.flex-comment_one-text p, .flex-comment_two-text p, .flex-comment_three-text p{
+    width: 80%;
+    font-size: 1em;
+}
+
+.comment_more p{
+    width: 110%;
+    margin-left: -.2em;
+    font-size: 1.1em;
+}
+
+.flex-comment_text .blue{
+    color: #0887ec;
+    font-size: 2em;
+    margin-bottom: -.1em;
+}
+
+.flex-comment_text .red{
+    color: red;
+}
+
+.flex-comment_text .orange{
+    color: orange;
+}
+
+.flex-comment_text .green{
+    color: green;
+}
+
+/* close flex comment*/
 
     .in_contact{
         object-fit: cover;
@@ -2613,6 +2717,97 @@ label{
     }
 
     /*close service-info*/
+
+    /* team slide contact */
+
+.wrapper{
+    /*border: 1px solid black;*/
+    /*width: 90%;
+    max-width: 1536px;*/
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border-bottom: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.team-member{
+    display: flex;
+    gap: 2em;
+}
+
+.team-thumb{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#team1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+#team2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+#team3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+#team4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+#team5  {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+#team6  {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+#team7  {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+#team8  {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.overlay_text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: #fff;
+}
+
+/* close team slide contact */
     
     /* SERVICES Cards  */
 
@@ -4162,6 +4357,97 @@ label{
     }
 
     /*close service-info*/
+
+    /* team slide contact */
+
+.wrapper{
+    /*border: 1px solid black;*/
+    /*width: 90%;
+    max-width: 1536px;*/
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border-bottom: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.team-member{
+    display: flex;
+    gap: 2em;
+}
+
+.team-thumb{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#team1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+#team2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+#team3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+#team4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+#team5  {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+#team6  {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+#team7  {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+#team8  {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.overlay_text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: #fff;
+}
+
+/* close team slide contact */
     
     /* SERVICES Cards  */
 
@@ -5776,6 +6062,97 @@ label{
     }
 
     /*close service-info*/
+
+    /* team slide contact */
+
+.wrapper{
+    /*border: 1px solid black;*/
+    /*width: 90%;
+    max-width: 1536px;*/
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border-bottom: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.team-member{
+    display: flex;
+    gap: 2em;
+}
+
+.team-thumb{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#team1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+#team2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+#team3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+#team4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+#team5  {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+#team6  {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+#team7  {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+#team8  {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.overlay_text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: #fff;
+}
+
+/* close team slide contact */
     
     /* SERVICES Cards  */
 
@@ -7687,6 +8064,97 @@ body.show-chat .chat-box-popup{
     }
     
     /* close team slide */
+
+    /* team slide contact */
+
+.wrapper{
+    /*border: 1px solid black;*/
+    /*width: 90%;
+    max-width: 1536px;*/
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border-bottom: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.team-member{
+    display: flex;
+    gap: 2em;
+}
+
+.team-thumb{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#team1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+#team2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+#team3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+#team4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+#team5  {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+#team6  {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+#team7  {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+#team8  {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.overlay_text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: #fff;
+}
+
+/* close team slide contact */
     
     /* SERVICES Cards  */
     
@@ -8754,6 +9222,7 @@ label{
 
     .intro{
         margin: 30px;
+        
     }
 
     .smile-info{
@@ -8799,6 +9268,7 @@ label{
         object-fit: cover;
         margin-left: 10px;
         box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        
     }
 
     /* close dental clinic info */
@@ -9460,94 +9930,6 @@ label{
 
         /* comments */
 
-    .text-comment{
-        margin-top: -10px;
-        padding-bottom: 50px;
-        border-top: 2px solid#028a0f;
-    }
-
-    .customers h2{
-        font-size: 6em;
-    }
-
-    .customers h3{
-        font-size: 5em;
-        text-align: center;
-        margin-left: .2em;
-    }
-
-    .customers hr{
-        margin-left: 36%;
-        opacity: 1;
-        width: 500px; 
-    }
-
-    .comment-container{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
-    }
-
-    .comments-info1{
-        display: none;
-    }
-
-    .comment_one{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .comment_two{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .comments-info .one-comma{
-        color: #0b6835;
-        font-size: 3em;
-        margin-bottom: 20px;
-    }
-    
-    .comments-info .two-comma{
-        color: #0b6835;
-        font-size: 3em;
-        padding-left: 420px;
-    }
-
-    .comment-name i{
-        font-size: 2.5em;
-    }
-
-    .comment-name h4{
-        color: #1a1a1a;
-        font-size: 2.5em;
-        margin-left: 10rem;
-    }
-
-    .comments-info p{
-        width: 540px;
-        font-size: 2.2em;
-    }
-
-    .comment_more {
-        display: none;
-    }
-
-    #cm:checked ~ .comment_more {
-        display: block;
-    }
-    
-    #cm:checked ~ label {
-        display: none;
-    }
-    
-    #cm{
-        display: none;
-    }
-    
 
     /* close comments */
 
@@ -9722,25 +10104,25 @@ label{
     
     /* close form */
 
-    /* team slide */
+   /* team slide */
 
-.team_container{
-    padding: 0 50px;
+   .team_container{
+    padding: 0 10px;
 }
 
 .team-slider{
     flex: 0 0 auto;
-    width: 450px;
-    height: 650px;
-    margin: 0 70px;
+    width: 250px;
+    height: 450px;
+    margin: 0 20px;
     justify-content: center;
     align-items: center;
 }
 
 .team-img{
     position: relative;
-    width: 130%;
-    height: 550px;
+    width: 100%;
+    height: 300px;
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
@@ -9754,12 +10136,13 @@ label{
 
 .team-center h5{
     color: #000;
-    font-size: 2em;
+    font-size: 1.1em;
 }
 
 .team-center h2{
     color: #1a1a1a;
-    font-size: 2.5em;
+    width: 150%;
+    font-size: 1.2em;
 }
 
 .overlay-content{
@@ -9774,24 +10157,16 @@ label{
     transition: 0.5s ease;
 }
 
-.team-img:hover .overlay-content{
-    height: 100%;
-    cursor: pointer;
-    filter: grayscale(1);
-}
-
 .overlay_text{
-    position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: var(--color-text);
 }
 
 .overlay_text h4{
-    margin: 6px 0 15px 0; 
+
     font-size: 1.5rem;
 } 
 
@@ -9800,34 +10175,98 @@ label{
     font-size: 1.2rem;
 } 
 
-.slider{
-    margin: auto;
+/* team slide contact */
+
+.wrapper{
+    /*border: 1px solid black;*/
+    /*width: 90%;
+    max-width: 1536px;*/
+    margin-inline: auto;
     position: relative;
-    display: grid;
-    place-items: center;
+    height: 300px;
+    margin-top: 5rem;
     overflow: hidden;
+    /*mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0)
+    );*/
+    margin-top: -3em;
+    margin-bottom: 3em;
 }
 
-.slide-track{
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height: 350px;
+    background-color: red;
+    border-bottom: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.team-member{
     display: flex;
-    width: calc(240px * 8);
-    animation: scroll 50s linear infinite;
+    gap: 2em;
 }
 
-.slide-track:hover{
-    animation-play-state: paused;
+.team-thumb{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
 }
 
-@keyframes scroll{
-    0% {
-        transform: translateX(0px * -2);
-    }
-    100% {
-        transform: translateX(calc(-200px * 7));
-    }
+
+#team1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
 
-/* close team slide */
+#team2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+#team3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+#team4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+#team5  {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+#team6  {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+#team7  {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+#team8  {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.overlay_text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: #fff;
+}
+
+/* close team slide contact */
 
     /*  fixed icons whatsapp popup*/
 
