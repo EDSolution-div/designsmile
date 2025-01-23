@@ -7804,11 +7804,10 @@ body.show-chat .chat-box-popup{
     }
     
     .doctor_Sa-img img{
-        object-fit: center;
         background-position: center;
-        width: 850px;
+        background-size: cover;
+        width: 100%;
         height: 65vh;
-        margin-top: -3.5em;
     }
     
     .qualifications_contact {
@@ -9359,6 +9358,105 @@ label{
     }
 
     /* close Anoying_message */
+
+    /* about us content */
+
+.about-text{
+    padding: 13em 0;
+    background-color: #fff;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.flex-wap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -7em;
+}
+
+.doctor_Sa-text p{
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    width: 550px;
+    margin-left: 1em;
+}
+
+.doctor_Sa-img img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+}
+
+
+.qualifications_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.qualifications_contact  img{
+    width: 300px;
+}
+
+#ch:checked ~ .show_less {
+    display: block;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+
+#ch{
+    display: none;
+}
+
+.show_less{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(72, 113,97);
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.border_center{
+    height: 200px;
+    padding: 0 0 2rem 3rem;
+    margin-top: 0em;
+}
+
+.border_center p{
+    z-index: 1;
+    font-size: 1.1em;
+    color: #1a1a1a;
+
+}
+
+.border_center span a{
+    color: #ad4d4d;
+    font-style: none;
+    text-decoration: none;
+}
+
+.border_center span a:hover{
+    color: forestgreen;
+}
+
+/* close about us content */
 
     /* contact info flex*/
 
