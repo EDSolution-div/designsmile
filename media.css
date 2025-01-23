@@ -431,10 +431,10 @@ label{
 
     .doctor_Sa-img img{
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
-        object-fit: cover;
-        height: 65vh;
+        object-fit: contain;
+        height: 50vh;
     }
 
     /* contact info flex*/
