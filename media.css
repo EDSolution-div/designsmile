@@ -429,6 +429,14 @@ label{
 
     /* close Anoying_message */
 
+    .doctor_Sa-img img{
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        object-fit: cover;
+        height: 65vh;
+    }
+
     /* contact info flex*/
 
 
