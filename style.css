@@ -452,10 +452,9 @@ button:hover {
 }
 
 .flex-one i{
-    position: absolute;
     left: 43%;
     top: 50%;
-    transform: translateY(-55%);
+    transform: translateY(-25%);
     font-size: 5em;
     color: red;
     background: #fff;
@@ -464,7 +463,6 @@ button:hover {
 }
 
 .flex-two i{
-    position: absolute;
     left: 44%;
     top: 50%;
     transform: translateY(160%);
@@ -475,10 +473,9 @@ button:hover {
 }
 
 .flex-three i{
-    position: absolute;
-    left: 42%;
+    left: 22%;
     bottom: 50%;
-    transform: translateY(670%);
+    transform: translateY(570%);
     font-size: 20px;
     fill: red;
     background: #fff;
@@ -754,9 +751,8 @@ button:hover {
 
 
 .info_contact img{
-    width: 500px;
-    object-fit: cover;
-    margin-left: 40px;
+    background-position: center;
+    background-size: cover;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     transition: all .5s;
     z-index: 1;
@@ -768,6 +764,13 @@ button:hover {
 
 .intro{
     margin: 30px;
+}
+
+.smile-info a{
+    background: #039be5;
+    border-radius: 22px;
+    padding: 10px;
+    color: #fff;
 }
 
 .smile-info{
@@ -938,12 +941,12 @@ button:hover {
 }
 
 .doctor_Sa-img img{
-    object-fit: center;
     background-position: center;
-    width: 850px;
+    background-size: cover;
+    width: 100%;
     height: 65vh;
-    margin-top: -3.5em;
 }
+
 
 .qualifications_contact {
     display: flex;
@@ -1095,7 +1098,7 @@ label{
 
    /* team slide */
 
-   .team_container{
+    .team_container{
     padding: 0 10px;
 }
 
@@ -1397,7 +1400,15 @@ label{
     margin-left: 7em;
 }
 
+.comment_more1 {
+    display: none;
+}
+
 #cm:checked ~ .comment_more {
+    display: block;
+}
+
+#cm1:checked ~ .comment_more1 {
     display: block;
 }
 
@@ -1405,7 +1416,7 @@ label{
     display: none;
 }
 
-#cm{
+#cm, #cm1{
     display: none;
 }
 
@@ -1529,7 +1540,7 @@ label{
 form {
     top: 50%;
     left: 50%;
-    transform: translate(120%, 5%);
+    transform: translate(65%, -55%);
     justify-content: center;
     align-items: center;
 }
